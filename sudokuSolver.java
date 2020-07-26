@@ -1,12 +1,19 @@
+import java.util.Arrays;
+
+
 public class sudokuSolver {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
 
         int[][] sudokuBoard = board.createBoard();
 
-        sudokuBoard[0][0] = 1;
+        //sudokuBoard[0][0] = 1;
 
-        System.out.println(sudokuBoard[0][0]);
+        sudokuBoard = board.fillBoard(sudokuBoard);
+
+        //System.out.println(Arrays.deepToString(sudokuBoard).replace("], ", "]\n"));
+        
+        board.printBoard(sudokuBoard);    
+
     }
 }
