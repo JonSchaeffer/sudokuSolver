@@ -1,0 +1,10 @@
+Solver Algorithm ideas
+
+Checks -
+
+All columns, rows, and squares must equal 45.
+All columns, rows, and squares cannot repeat a number.
+
+Start with number 1, and check every square first, then row, then number to see if it fits anywhere. Cycle through and repeat each number until the board is complete.
+Find squares, rows, or columns with the least amount of empty spaces, rank the missing numbers and fill. Go back to the first idea and finish.
+
