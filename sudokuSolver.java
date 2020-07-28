@@ -13,16 +13,16 @@ public class sudokuSolver {
 
         //System.out.println(Arrays.deepToString(sudokuBoard).replace("], ", "]\n"));
         
-        //board.printBoard(sudokuBoard);    
+        board.printBoard(sudokuBoard);    
        
+        //System.out.println(Arrays.toString(sudokuBoard[0])); 
+        //System.out.println(solve.hasDuplicates(sudokuBoard[0])); 
         
-        int[][] testBoard = board.createBoard();
-        testBoard[0][0] = 1;
-        testBoard[0][1] = 1;
+        System.out.println(Arrays.toString(solve.getColumnN(sudokuBoard, 3)));
+        System.out.println(Arrays.toString(solve.getSquareN(sudokuBoard, 8)));
+
+        System.out.println(solve.hasDuplicates(solve.getSquareN(sudokuBoard, 7)));
 
 
-
-        System.out.println(Arrays.toString(testBoard[0])); 
-        System.out.println(solve.hasDuplicates(testBoard[0])); 
     }
 }
