@@ -1,5 +1,4 @@
-import java.util.Arrays;
-
+import java.util.*;
 
 public class sudokuSolver {
 
@@ -11,17 +10,24 @@ public class sudokuSolver {
 
         sudokuBoard = board.fillBoard(sudokuBoard);
 
-        //System.out.println(Arrays.deepToString(sudokuBoard).replace("], ", "]\n"));
+
+        //System.out.println(Arrays.deepToString(sudokuBoard));
+
+        System.out.println(Arrays.deepToString(sudokuBoard).replace("], ", "]\n"));
         
-        board.printBoard(sudokuBoard);    
+        //board.printBoard(sudokuBoard);    
        
         //System.out.println(Arrays.toString(sudokuBoard[0])); 
-        //System.out.println(solve.hasDuplicates(sudokuBoard[0])); 
+        //System.out.println(solve.hasDuplicates(solve.getSquareN(sudokuBoard, 0))); 
         
-        System.out.println(Arrays.toString(solve.getColumnN(sudokuBoard, 3)));
-        System.out.println(Arrays.toString(solve.getSquareN(sudokuBoard, 8)));
+        //System.out.println(Arrays.toString(solve.getColumnN(sudokuBoard, 3)));
+        //System.out.println(Arrays.toString(solve.getSquareN(sudokuBoard, 8)));
 
-        System.out.println(solve.hasDuplicates(solve.getSquareN(sudokuBoard, 7)));
+        //System.out.println(solve.hasDuplicates(solve.getSquareN(sudokuBoard, 7)));
+        
+        //System.out.println(Arrays.toString(solve.getRowN(sudokuBoard, 0)));
+
+        
 
 
     }

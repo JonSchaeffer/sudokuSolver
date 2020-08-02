@@ -4,13 +4,18 @@ public class solve extends sudokuSolver {
 
     public static boolean hasDuplicates(int[] board){
    
-       Set<Integer> numCollection = new HashSet<Integer>(); 
+        Set<Integer> numStore = new HashSet<Integer>();
+        for(int i = 0; i < board.length; i++){
+            if(numStore.contains (board[i])){
+                return true;
+            } else {
+                if(board[i] != 0){
+                    
+                    numStore.add(board[i]);
+                }
+            }
+        }
 
-           for (int i = 0; i < board.length; i++){
-                if(numCollection.contains(board[i]))return true;{
-                    numCollection.add(i); 
-                } 
-            } 
 
        return false; 
     }
@@ -25,6 +30,14 @@ public class solve extends sudokuSolver {
 
 
        return column; 
+    }
+
+    //returns a specified row by number of row
+    public static int[] getRowN(int[][] board, int rowNum){
+    
+        int[] row = new int[9];
+        row = board[rowNum];
+        return row;    
     }
 
 
@@ -88,5 +101,11 @@ public class solve extends sudokuSolver {
         }
         return null;
     }
+
+
+    
+
+
+
 
 }
